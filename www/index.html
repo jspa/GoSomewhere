@@ -1,22 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>PhoneGap</title>
+<title>GoSomewhere</title>
+<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+</style>
+
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBLRZb2URmSGtb7KvtTJW8BkYsikguU89o&sensor=true">
- </script>
- <script type="text/javascript">
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBLRZb2URmSGtb7KvtTJW8BkYsikguU89o&sensor=false">
+</script>
+<script type="text/javascript">
       function initialize() {
         var myOptions = {
-          center: new google.maps.LatLng(49.2836767, -123.104818),
-          zoom: 8,
+          center: new google.maps.LatLng(49.283, -123.104),
+          zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map_canvas"),
             myOptions);
       }
-    </script>
+</script>
 
 
 </head>
